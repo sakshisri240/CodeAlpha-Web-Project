@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🌍 Travel Images Gallery</h1>
+        <p>Explore Beautiful Destinations Around The World</p>
+
+        <input type="text" class="search-box" placeholder="Search Destination...">
+
+        <div class="gallery">
+
+            <div class="card">
+                <img src="img1.jpeg" onclick="openImage(this.src)">
+                <h3>City Lights</h3>
+            </div>
+
+            <div class="card">
+                <img src="img2.jpeg" onclick="openImage(this.src)">
+                <h3>Snow Mountains</h3>
+            </div>
+
+            <div class="card">
+                <img src="img3.jpeg" onclick="openImage(this.src)">
+                <h3>Sunset View</h3>
+            </div>
+
+            <div class="card">
+                <img src="img4.jpeg" onclick="openImage(this.src)">
+                <h3>Beach Paradise</h3>
+            </div>
+
+            <div class="card">
+                <img src="img5.jpeg" onclick="openImage(this.src)">
+                <h3>Waterfall</h3>
+            </div>
+
+            <div class="card">
+                <img src="img6.jpeg" onclick="openImage(this.src)">
+                <h3>Forest Beauty</h3>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeImage()">&times;</span>
+        <img id="lightbox-img">
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
